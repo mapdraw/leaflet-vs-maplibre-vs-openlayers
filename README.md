@@ -1,8 +1,8 @@
-# Leaflet vs MapLibre — Comparisons
+# Leaflet vs MapLibre vs OpenLayers — Comparisons
 
-A collection of minimal comparisons between **Leaflet 1.9.4** and **MapLibre GL JS 5.24.0**.
+A collection of minimal comparisons between **Leaflet 1.9.4**, **MapLibre GL JS 5.24.0**, and **OpenLayers 10.9.0**.
 
-**Live demo:** https://mapdraw.github.io/leaflet-vs-maplibre
+**Live demo:** https://mapdraw.github.io/leaflet-vs-maplibre-vs-openlayers
 
 ## Comparisons
 

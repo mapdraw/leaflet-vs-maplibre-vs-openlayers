@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenLayers 9 • GeoJSON Loader</title>
+    <title>OpenLayers 10.9.0</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.9.0/ol.css" />
     <style>
         * {
@@ -57,6 +57,10 @@
                 });
                 const vectorLayer = new ol.layer.Vector({
                     source: vectorSource,
+                    style: new ol.style.Style({
+                        fill: new ol.style.Fill({ color: 'rgba(51, 136, 255, 0.2)' }),
+                        stroke: new ol.style.Stroke({ color: '#3388ff', width: 3 })
+                    })
                 });
                 map.addLayer(vectorLayer);
             })
