@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaflet vs MapLibre vs OpenLayers</title>
     <style>
       * {
@@ -12,13 +13,13 @@
       body {
         font-family: sans-serif;
         color: #000;
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         text-align: center;
-        padding-top: 80px;
+        padding: 80px 16px 40px;
       }
       h1 {
         font-size: 1.4rem;
@@ -34,8 +35,9 @@
       }
       .links {
         display: flex;
+        flex-direction: column;
         gap: 12px;
-        justify-content: center;
+        align-items: center;
       }
       a {
         padding: 10px 24px;
@@ -54,9 +56,10 @@
     <div class="group">
       <h2>Large GeoJSON (100MB — USA zip codes)</h2>
       <div class="links">
-        <a href="geojson-large/leaflet.html" target="_blank">Leaflet 1.9.4</a>
-        <a href="geojson-large/maplibre.html" target="_blank">MapLibre 5.24.0</a>
-        <a href="geojson-large/openlayers.html" target="_blank">OpenLayers 10.9.0</a>
+        <a href="geojson-large/leaflet-svg.html" target="_blank">Leaflet 1.9.4 (SVG)</a>
+        <a href="geojson-large/leaflet-canvas.html" target="_blank">Leaflet 1.9.4 (Canvas)</a>
+        <a href="geojson-large/maplibre.html" target="_blank">MapLibre GL JS 5.24.0 (WebGL)</a>
+        <a href="geojson-large/openlayers.html" target="_blank">OpenLayers 10.9.0 (Canvas)</a>
       </div>
     </div>
   </body>

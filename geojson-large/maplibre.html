@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>MapLibre GL JS 5.24.0</title>
-    <link href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MapLibre GL JS 5.24.0 (WebGL)</title>
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
     <style>
       * {
         margin: 0;
@@ -35,6 +36,8 @@
         },
         center: [-96, 38],
         zoom: 3,
+        // MapLibre zoom is one level below Leaflet/OpenLayers: 18 == their 19
+        maxZoom: 18,
       });
       map.on("load", () => {
         fetch("usa_zip_codes_geo_100m.json")
